@@ -1,0 +1,38 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ogeme\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add express dotenv express-handlebars mysql
+
+PATH: 
+  C:\Users\ogeme\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ogeme\bin;C:\Python310\Scripts;C:\Python310;C:\Program Files (x86)\VMware\VMware Player\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ogeme\AppData\Local\Android\Sdk\platform-tools;C:\ProgramData\chocolatey\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\nodejs;C:\Users\ogeme\scoop\shims;C:\Users\ogeme\anaconda3;C:\Users\ogeme\anaconda3\Library\mingw-w64\bin;C:\Users\ogeme\anaconda3\Library\usr\bin;C:\Users\ogeme\anaconda3\Library\bin;C:\Users\ogeme\anaconda3\Scripts;C:\Users\ogeme\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\ogeme\AppData\Local\Programs\Python\Python39;C:\Users\ogeme\AppData\Local\Microsoft\WindowsApps;C:\Users\ogeme\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2021.1.1\bin;C:\src\flutter\flutter\bin;C:\Program Files\heroku\bin;C:\tools\dart-sdk\bin;C:\Users\ogeme\AppData\Roaming\Pub\Cache\bin;C:\Users\ogeme\AppData\Local\Programs\Hyper\resources\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\ogeme\AppData\Local\Programs\mongosh;C:\Users\ogeme\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ENETUNREACH 2606:4700::6810:1623:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)
+
+npm manifest: 
+  {
+    "name": "user-management-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
