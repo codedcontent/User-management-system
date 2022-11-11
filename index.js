@@ -3,7 +3,6 @@ dotenv.config();
 const express = require("express");
 const expressHbs = require("express-handlebars");
 const bodyParser = require("body-parser");
-const cors = require("cors");
 const mysql = require("mysql");
 
 const app = express();
@@ -12,8 +11,6 @@ const port = process.env.PORT || 3798;
 // Parsing middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-app.use(cors({ origin: "*" }));
 
 // Static file
 app.use(express.static("public"));
