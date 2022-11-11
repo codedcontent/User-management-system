@@ -12,7 +12,7 @@ const pool = mysql.createPool({
 exports.view = (req, res) => {
   // Connect to the db
   pool.getConnection((err, connection) => {
-    if (err) throw err; // not connected!
+    if (err) console.log(err); // not connected!
 
     // Use the connection
     connection.query(
@@ -36,7 +36,7 @@ exports.view = (req, res) => {
 exports.find = (req, res) => {
   // Connect to the db
   pool.getConnection((err, connection) => {
-    if (err) throw err; // not connected!
+    if (err) console.log(err); // not connected!
 
     const searchTerm = req.body.search;
 
@@ -67,7 +67,7 @@ exports.addUser = (erq, res) => {
 exports.create = (req, res) => {
   const { first_name, last_name, email, phone, comments } = req.body;
   pool.getConnection((err, connection) => {
-    if (err) throw err; // not connected!
+    if (err) console.log(err); // not connected!
 
     // Use the connection
     connection.query(
@@ -91,7 +91,7 @@ exports.viewEdit = (req, res) => {
   const { id } = req.params;
 
   pool.getConnection((err, connection) => {
-    if (err) throw err;
+    if (err) console.log(err);
 
     connection.query("SELECT * FROM user WHERE id = ?", [id], (err, rows) => {
       // When done, release connection
@@ -107,7 +107,7 @@ exports.editUser = (req, res) => {
   const { first_name, last_name, email, phone, comments } = req.body;
 
   pool.getConnection((err, connection) => {
-    if (err) throw err;
+    if (err) console.log(err);
 
     connection.query(
       "UPDATE user SET first_name = ?, last_name = ?, email = ?, phone = ?, comments = ? WHERE id = ?",
@@ -141,7 +141,7 @@ exports.editUser = (req, res) => {
 exports.delete = (req, res) => {
   // Connect to the db
   pool.getConnection((err, connection) => {
-    if (err) throw err; // not connected!
+    if (err) console.log(err); // not connected!
 
     // Use the connection
     connection.query(
@@ -164,7 +164,7 @@ exports.delete = (req, res) => {
 exports.viewAll = (req, res) => {
   // Connect to the db
   pool.getConnection((err, connection) => {
-    if (err) throw err; // not connected!
+    if (err) console.log(err); // not connected!
 
     // Use the connection
     connection.query(

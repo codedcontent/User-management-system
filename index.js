@@ -35,8 +35,8 @@ const pool = mysql.createPool({
 
 // Connect to the db
 pool.getConnection((err, connection) => {
-  if (err) throw err;
-  console.log(`Connection ID: ${connection.threadId}`);
+  if (err) console.log(err);
+  console.log(`Connection ID: ${connection?.threadId}`);
 });
 
 // Routes
