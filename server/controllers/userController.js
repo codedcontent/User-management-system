@@ -1,12 +1,7 @@
-const mysql = require("mysql");
+const mysql = require("mysql2");
 
 // Database connection Pool
-const pool = mysql.createPool({
-  connectionLimit: 100,
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  database: process.env.DB_NAME,
-});
+const pool = mysql.createPool(process.env.MYSQLURL);
 
 // View users
 exports.view = (req, res) => {

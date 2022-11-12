@@ -3,7 +3,7 @@ dotenv.config();
 const express = require("express");
 const expressHbs = require("express-handlebars");
 const bodyParser = require("body-parser");
-const mysql = require("mysql");
+const mysql = require("mysql2");
 
 const app = express();
 const port = process.env.PORT || 3798;
@@ -25,19 +25,23 @@ app.engine(
 app.set("view engine", expressHbs);
 
 // Database connection Pool
-const pool = mysql.createPool({
-  connectionLimit: 100,
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  //   password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
-});
+const pool = mysql.createPool(process.env.MYSQLURL);
 
-// Connect to the db
+// // Connect to the db
 pool.getConnection((err, connection) => {
   if (err) console.log(err);
   console.log(`Connection ID: ${connection?.threadId}`);
 });
+
+const mySqlOptions = {
+  connectionLimit: 100,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
+};
+
+// console.log(sqlUrl);
 
 // Routes
 const routes = require("./server/routes/user");

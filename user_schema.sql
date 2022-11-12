@@ -8,3 +8,5 @@ CREATE TABLE `user_management_system`.`user` (
     `status` VARCHAR(45) NOT NULL DEFAULT 'active',
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;
+
+mysql://root:mvfcfVk7H1AXu7E5LsJp@containers-us-west-85.railway.app:5547/railway
