@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a classic CRUD application used to execute the CRUD functionality use an sql database, node.js and express.js
+This is a classic CRUD application used to demonstrate the execution of CRUD functionality using an sql database, node.js and express.js
 
 ### Features
 
